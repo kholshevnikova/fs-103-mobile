@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logotip" href="./index.html"
@@ -77,8 +76,60 @@
             ></a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">O</button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="menu-close-btn">X</button>
+          <nav>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Home</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">How it`s made?</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg width="24px" height="24px" class="icons-soc-mob">
+                <use href="./img/symbol-defs-opti.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg width="24px" height="24px" class="icons-soc-mob">
+                <use href="./img/symbol-defs-opti.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg width="24px" height="24px" class="icons-soc-mob">
+                <use href="./img/symbol-defs-opti.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main class="main">
       <section class="hero">
         <div class="container hero-container">
@@ -214,18 +265,39 @@
           </ul>
         </div>
       </section> -->
-      <!-- MADE -->
-      <!-- <section class="made">
+
+      <section class="made">
         <div class="container">
           <h2 class="made-title section-title">hOW IT'S <span>made?</span></h2>
           <div class="made-wrap">
-            <img
-              src="./img/choko.jpg"
-              alt="choko"
-              width="600"
-              height="400"
-              class="made-img"
-            />
+            <picture>
+              <source
+                srcset="./img/choko.jpg 1x, ./img/choko2x.jpg 2x"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./img/choko-image-tab.jpg   1x,
+                  ./img/choko-image-tab2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/choko-image-mob.jpg   1x,
+                  ./img/choko-image-mob2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/choko-image-tab.jpg"
+                alt="choko"
+                width="614"
+                height="400"
+                class="made-img"
+              />
+            </picture>
+
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -266,7 +338,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="products">
         <div class="container">
           <h2 class="products-title section-title">
